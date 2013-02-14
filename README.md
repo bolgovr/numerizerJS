@@ -1,6 +1,8 @@
 numerizerJS
 ===========
-[![Build Status](https://api.travis-ci.org/bolgovr/numerizerJS.png)](http://travis-ci.org/bolgovr/numerizerJS)
+
+[![Build Status](https://travis-ci.org/bolgovr/numerizerJS.png?branch=master)](https://travis-ci.org/bolgovr/numerizerJS)
+
 
 Numerizer is library for parsing numbers in natural language from strings.
 Port of [Chronic's](https://github.com/mojombo/chronic) numerizer lib to JavaScript
