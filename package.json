@@ -1,5 +1,5 @@
 {
-  "name": "numerizerJS",
+  "name": "numerizer",
   "version": "0.0.1",
   "description": "Parse numbers in natural language from strings",
   "main": "index.js",
