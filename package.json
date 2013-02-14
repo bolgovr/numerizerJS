@@ -1,0 +1,25 @@
+{
+  "name": "numerizerJS",
+  "version": "0.0.1",
+  "description": "Parse numbers in natural language from strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bolgovr/numerizerJS.git"
+  },
+  "keywords": [
+    "parse",
+    "numbers",
+    "nlp"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "author": "Roman Bolgov",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "bd8e4f4d7a34f3c5fe64a346a33e7f268e9b66f8"
+}
