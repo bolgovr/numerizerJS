@@ -1,6 +1,6 @@
 var assert = require('assert');
 
-describe("Numerizer", function() {
+describe("Numerizer", function () {
   var numerizer = require('../');
 
   it('should parse single numbers', function (done) {
@@ -12,14 +12,14 @@ describe("Numerizer", function() {
   });
 
   it('should parse numbers above ten', function (done) {
-      assert.equal(parseInt(numerizer('forty two'), 10), 42);
-      assert.equal(parseInt(numerizer('fifty nine'), 10), 59);
-      done();
+    assert.equal(parseInt(numerizer('forty two'), 10), 42);
+    assert.equal(parseInt(numerizer('fifty nine'), 10), 59);
+    done();
   });
   it('should parse fractions', function (done) {
-      assert.equal(parseFloat(numerizer('two and a half')), 2.5);
-      assert.equal(parseFloat(numerizer('three quarters')), 0.75);
-      done();
+    assert.equal(parseFloat(numerizer('two and a half')), 2.5);
+    assert.equal(parseFloat(numerizer('three quarters')), 0.75);
+    done();
   });
 
   it('should parse numbers above hundred', function (done) {
@@ -37,6 +37,15 @@ describe("Numerizer", function() {
     assert.equal(parseInt(numerizer('one thousand two hundred'), 10), 1200);
     assert.equal(parseInt(numerizer('one thousand two hundred and fifteen'), 10), 1215);
     assert.equal(parseFloat(numerizer('one thousand two hundred and fifteen and a half')), 1215.5);
+    done();
+  });
+  it('should parse numbers within a string', function (done) {
+    assert.equal(numerizer('thirty six days from now'), '36 days from now');
+    assert.equal(numerizer('forty four bottles of beer'), '44 bottles of beer');
+    assert.equal(numerizer('sixty six bottles of beer'), '66 bottles of beer');
+    assert.equal(numerizer('seventy seven bottles of beer'), '77 bottles of beer');
+    assert.equal(numerizer('eighty eight bottles of beer'), '88 bottles of beer');
+    assert.equal(numerizer('ninety nine bottles of beer'), '99 bottles of beer');
     done();
   });
 
