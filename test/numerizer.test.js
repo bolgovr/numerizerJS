@@ -132,7 +132,7 @@ describe("Numerizer", function() {
       assert.equal(numerizer('two thousand'), '2000');
       assert.equal(numerizer('two thousand and thirty'), '2030');
       assert.equal(numerizer('nine hundred and ninety nine thousand nine hundred and ninety nine'), '999999');
-      assert.equal(numerizer('two millions'), '2000000');
+      assert.equal(numerizer('two million'), '2000000');
       done();
     });
   });
